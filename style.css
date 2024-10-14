@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-image: url(pictures/4931029.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.site-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+}
+
+.header-container {
+  margin-top: 20px;
+  border: 2px solidblack;
+  border-radius: 20px;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  width: 100%;
+  background: linear-gradient(135deg, #333333, #555555);
+  opacity: 0.9;
+  color: white;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+.header-bar h1 {
+  color: white;
+  padding: 20px;
+  text-decoration: underline dotted;
+  text-underline-position: under;
+  font-family: fantasy;
+}
+
+.header-bar input {
+  border: none;
+  box-shadow: 2px 2px 4px black;
+  border-radius: 20px;
+  width: 200px;
+  padding: 12px;
+  background-color: rgba(211, 211, 211, 0.149);
+  transition: ease-in-out 0.8s;
+  color: white;
+}
+
+.header-bar input:hover {
+  transform: scale(1.02);
+  transition: ease-in-out 0.8s;
+}
+
+.button-div1 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.fa-plus {
+  font-size: 20px;
+  padding: 4px;
+}
+
+.plus-btn {
+  padding: 2px;
+  border-radius: 12px;
+  background-color: rgb(87, 199, 87);
+  color: white;
+  border: 2px solid rgb(87, 199, 87);
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+  margin-right: 20px;
+  width: 100px;
+}
+
+.plus-btn:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+  box-shadow: 2px 2px 10px black;
+}
+
+.fa-eraser {
+  padding: 4px;
+  font-size: 20px;
+}
+
+.erase-btn {
+  padding: 2px;
+  /* border-radius: 50%; */
+  border-radius: 12px;
+  border: 2px solid red;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  transition: ease-in-out 0.3s;
+  margin-top: 20px;
+  width: 100px;
+}
+.erase-btn:hover {
+  transform: scale(1.1);
+  transition: ease-in-out 0.3s;
+  box-shadow: 2px 2px 10px black;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-list {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  height: 400px;
+  /* box-shadow: 2px 2px 80px rgb(180, 180, 180); */
+  box-shadow: 20px 20px 40px black;
+  background: linear-gradient(135deg, #333333, #555555);
+  opacity: 0.8;
+  color: white;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+.box-list li {
+  padding: 10px;
+  list-style-type: none;
+  font-size: 15px;
+  background-color: rgba(128, 128, 128, 1);
+  width: 300px;
+  border: 2px solid rgba(0, 0, 0, 0.178);
+  border-radius: 20px;
+  margin: 10px;
+  transition: ease-in-out 0.2s;
+}
+
+.selected-element {
+  box-shadow: 2px 2px 30px black;
+  background-color: #333333;
+  color: black;
+  transform: scale(1.1);
+}
+
+li {
+  cursor: pointer;
+}
+
+.footer-box {
+  display: flex;
+  width: 100%;
+  background-color: rgba(77, 76, 76, 1);
+}
+
+.footer {
+  background-color: rgba(77, 76, 76, 0.452);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bolder;
+  justify-content: space-between;
+  width: 65%;
+}
+
+.fa-instagram,
+.fa-github,
+.fa-discord,
+.fa-linkedin {
+  font-size: 30px;
+  padding: 20px;
+  color: white;
+  transition: ease-in-out 0.3s;
+}
+.fa-discord:hover,
+.fa-github:hover,
+.fa-instagram:hover,
+.fa-linkedin:hover {
+  background-color: black;
+  transition: ease-in-out 0.6s;
+  transform: scale(1.2);
+}
+
+.p {
+  padding: 20px;
+  font-size: 22px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+@media (min-width: 800px) {
+  .box-list {
+    display: flex;
+    width: 560px;
+  }
+
+  .plus-btn {
+    margin-right: 20px;
+  }
+}
