@@ -21,7 +21,6 @@ body {
 
 .header-container {
   margin-top: 20px;
-
   border-radius: 20px;
   justify-content: center;
 }
@@ -146,11 +145,13 @@ body {
   list-style-type: none;
   font-size: 15px;
   background-color: rgba(128, 128, 128, 1);
-  width: 100%;
+  width: 200px;
   border: 2px solid rgba(0, 0, 0, 0.178);
   border-radius: 20px;
   margin: 10px;
   transition: ease-in-out 0.2s;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
 }
 
 .selected-element {
