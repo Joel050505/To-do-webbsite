@@ -22,6 +22,7 @@ button.addEventListener("click", function () {
     // Event listener for newly created to do pharagraph
     newItem.addEventListener("click", function () {
       newItem.classList.toggle("selected-element");
+      newItem.classList.toggle("checked");
     });
 
     eraseButton.addEventListener("click", function () {

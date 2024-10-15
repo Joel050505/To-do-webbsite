@@ -133,7 +133,6 @@ body {
   padding: 20px;
   text-decoration: underline dotted;
   text-underline-position: under;
-  /* font-family: fantasy; */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -202,7 +201,6 @@ body {
 .erase-btn:hover {
   transform: scale(1.1);
   transition: ease-in-out 0.3s;
-  /* box-shadow: 2px 2px 10px black; */
   box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.7),
     0px 0px 40px rgba(255, 0, 0, 0.8);
 }
@@ -211,6 +209,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-bottom-left-radius: 18px;
+  border-bottom-right-radius: 18px;
+  background-color: #555555;
+  box-shadow: 20px 20px 40px black;
+  padding-bottom: 20px;
 }
 
 .box-list {
@@ -218,36 +223,53 @@ body {
   width: 100%;
   padding: 20px;
   height: 400px;
-  /* box-shadow: 2px 2px 80px rgb(180, 180, 180); */
-  box-shadow: 20px 20px 40px black;
-  background: linear-gradient(135deg, #333333, #555555);
-  opacity: 0.8;
+  background-color: #555555;
   color: white;
-  border-bottom-left-radius: 18px;
-  border-bottom-right-radius: 18px;
 }
-
-.box-list li {
+.ul-list li {
+  position: relative;
   padding: 15px;
+  padding-left: 35px;
   list-style-type: none;
   font-size: 15px;
   background-color: rgba(128, 128, 128, 1);
   width: 200px;
-  /* border: 2px solid rgba(0, 0, 0, 0.178); */
   border: 1px solid #ccc;
   border-radius: 20px;
   margin: 10px;
   transition: ease-in-out 0.2s;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
-  color: #333;
+}
+
+li::before {
+  content: "    ";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(pictures/check_box_outline_blank_20dp_FFFFFF_FILL0_wght400_GRAD0_opsz20.png);
+  background-size: cover;
+  background-position: center;
+  top: 10px;
+  left: 2px;
+  transition: ease-in-out 0.2s;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  width: 30px;
+  transition: ease-in-out 0.2s;
+  background-image: url(pictures/select_check_box_24dp_04FF00_FILL0_wght400_GRAD0_opsz24.png);
 }
 
 .selected-element {
-  box-shadow: 2px 2px 30px black;
+  box-shadow: 2px 2px 10px black;
   background-color: #333333;
   color: white;
-  transform: scale(1.1);
 }
 
 li:hover {
@@ -288,7 +310,7 @@ li:hover {
   font-family: "Courier New", Courier, monospace;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
   .box-list {
     display: flex;
     width: 560px;
