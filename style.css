@@ -351,7 +351,7 @@ li:hover {
   width: 130px;
   background-color: black;
   border-bottom-right-radius: 20px;
-  padding: 20px;
+  padding: 15px;
 }
 
 @media (min-width: 768px) {
