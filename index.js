@@ -108,3 +108,12 @@ bodyEl.addEventListener("keydown", function (event) {
     btnFunction();
   }
 });
+
+function updateTime() {
+  let now = new Date();
+  let currentDateTime = now.toLocaleTimeString();
+
+  let timeDisplay = document.querySelector(".time");
+  timeDisplay.textContent = currentDateTime;
+}
+setInterval(updateTime, 1000);
