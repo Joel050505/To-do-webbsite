@@ -248,14 +248,16 @@ ul li.checked {
 ul li button {
   color: white;
   position: absolute;
-  right: -175px;
+  right: -1px;
   font-size: 20px;
-  top: 0px;
-  border-radius: 40px;
+  top: -6px;
+  font-size: 12px;
+  border-radius: 15px;
   border: 2px solid orange;
   background-color: orange;
-  padding: 10px;
-  width: 150px;
+
+  padding: 2px;
+  width: 70px;
   cursor: pointer;
   transition: ease-in-out 0.2s;
 }
@@ -334,7 +336,7 @@ li:hover {
   font-family: "Courier New", Courier, monospace;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .box-list {
     display: flex;
     width: 560px;
@@ -377,6 +379,16 @@ li:hover {
   .fa-brands {
     font-size: 30px;
     padding: 20px;
+  }
+
+  ul li button {
+    color: white;
+    right: -175px;
+    font-size: 20px;
+    top: 0px;
+    padding: 10px;
+    width: 150px;
+    border-radius: 40px;
   }
 }
 

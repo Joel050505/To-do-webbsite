@@ -82,7 +82,6 @@ function btnFunction() {
           newItem.appendChild(selectBox);
           newItem.classList.remove("selected-element");
           newItem.classList.remove("checked");
-        } else {
         }
       });
 
